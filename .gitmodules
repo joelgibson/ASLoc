@@ -1,0 +1,3 @@
+[submodule "IHecke"]
+	path = IHecke
+	url = https://github.com/joelgibson/IHecke

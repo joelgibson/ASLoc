@@ -1,0 +1,1863 @@
+// P-canonical basis for G~2 with spherical subset [ 1, 2 ] and characteristic p=11
+
+RF := recformat< cartanType, cartan, sphsubset, char, pcans >;
+v := LaurentSeriesRing(Rationals()).1;
+return rec<RF | cartanType := "G~2", cartan := MatrixAlgebra(IntegerRing(), 3) ! Matrix(3, 3, \[ 2, -1, 0, -3, 2, -1, 0, -1, 2 ]), sphsubset := \[ 1, 2 ], char := 11, pcans := [ car<PowerSequence(IntegerRing()), car<PowerSequence(PowerSequence(IntegerRing())), PowerSequence(LaurentSeriesRing(RationalField())), Strings()>> |
+<[ IntegerRing() | ], <[ PowerSequence(IntegerRing()) |
+[ IntegerRing() | ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>,
+<\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ], <[ PowerSequence(IntegerRing()) |
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ],
+\[ 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2, 3, 2, 1, 2, 1, 2 ]
+], [ LaurentSeriesRing(RationalField()) |
+1,
+1
+], "C">>
+]>
