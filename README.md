@@ -1,7 +1,9 @@
 # ASLoc
 
 A MAGMA package for working with the localised diagrammatic category and calculating the p-canonical basis of Hecke
-algebras. By Joel Gibson, Lars Thorge Jensen, and Geordie Williamson, 2022.
+algebras.
+
+By Joel Gibson, Lars Thorge Jensen, and Geordie Williamson, 2022.
 
 
 - [ASLoc](#asloc)
@@ -33,8 +35,8 @@ wanting to read or work on the internals should be comfortable with the diagramm
 of [Introduction to Soergel Bimodules](https://link.springer.com/book/10.1007/978-3-030-48826-0), along with the basic
 theory and results of the modular case.
 
-The algorithms used are explained in **[link to paper here!]**. There are two main algorithms, one more adapted to the
-case of affine groups (affine ranks 2 and 3), and the other more adapted to small rank finite groups (up to rank 6 ish).
+The algorithms used are explained in the paper [*Calculating the p-canonical basis of Hecke algebras*](https://arxiv.org/abs/2204.04924). There are two main algorithms, one more adapted to the case of affine groups (affine ranks 2 and 3), and the other more
+adapted to small rank finite groups (up to rank 6 ish).
 
 The Hecke algebra aspects of `ASLoc` (which are actually quite small) rely on the
 [IHecke](https://github.com/joelgibson/IHecke) package, which is imported as a submodule.
