@@ -325,7 +325,7 @@ morphisms are towards the end of [`Package/BSCat.m`](Package/BSCat.m).
 
 To make it easy for users who want to check the Zamolodchikov relations in type A3 and B3 we provide three files: [`Tests/ZamolodchikovA3.m`](Tests/Tests/ZamolodchikovA3.m), [`Tests/ZamolodchikovB3.m`](Tests/ZamolodchikovB3.m) and [`Tests/ZamolodchikovA3_wrong_start.m`](Tests/ZamolodchikovA3_wrong_start.m). The first two files check the Zamalodchikov relations in type A3 and B3, and should run without error. The last one takes a different path in the reduced expression graph and should produce an error. This illustrates that the Zamolodchikov relations are sensitive to the starting point.
 
-# Future work
+# Future work 
 
 There are numerous improvements which could be made to this software, both algorithmically and from a usability
 standpoint.
