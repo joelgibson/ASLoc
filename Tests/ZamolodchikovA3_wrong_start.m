@@ -1,4 +1,5 @@
-// This test verifies the A3 Zamolodchikov relation, as written on page g0 of Soergel Calculus by Elias and Williamson.
+// This test attempts to verify a wrong version of the A3 Zamolodchikov relation.
+// It illustrates that the correctness of the Zam relation is very sensative to starting point.
 if assigned batch then SetQuitOnError(true); else SetDebugOnError(true); end if;
 
 AttachSpec("ASLoc.spec");
