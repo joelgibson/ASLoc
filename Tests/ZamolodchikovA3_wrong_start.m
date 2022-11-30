@@ -1,5 +1,5 @@
 // This test attempts to verify a wrong version of the A3 Zamolodchikov relation.
-// It illustrates that the correctness of the Zam relation is very sensative to starting point.
+// It illustrates that the correctness of the Zam relation is very sensitive to starting point.
 if assigned batch then SetQuitOnError(true); else SetDebugOnError(true); end if;
 
 AttachSpec("ASLoc.spec");
