@@ -6,7 +6,7 @@ AttachSpec("ASLoc.spec");
 SetColumns(0);
 SetAssertions(3);
 
-// A3 relation, as written on page 10.
+// A3 relation, as written on page 303.
 // You really need the picture to make sense of the following code. R, G, B stand for Red, Green, and Blue.
 cartan := CartanMatrix("A3");
 W := CoxeterGroup(GrpFPCox, cartan);

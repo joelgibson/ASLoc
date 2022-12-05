@@ -1,4 +1,4 @@
-// This test verifies the A3 Zamolodchikov relation, as written on page g0 of Soergel Calculus by Elias and Williamson.
+// This test verifies the A3 Zamolodchikov relation, as written on page 303 of Soergel Calculus by Elias and Williamson.
 if assigned batch then SetQuitOnError(true); else SetDebugOnError(true); end if;
 
 AttachSpec("ASLoc.spec");
